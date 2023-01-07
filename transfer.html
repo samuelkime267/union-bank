@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard</title>
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="shortcut icon" href="./assets/images/logo/colored logo icon.svg" type="image/x-icon">
+</head>
+<body style="background: rgb(232, 232, 232);">
+  <header class="account-header">
+    <div class="head-container">
+      <div class="menu-logo-container">
+        <button id="sidebarBtn-show"><img src="./assets/icons/menu.png" alt="" class="icon"></button>
+        <a href="index.html"><img src="./assets/images/logo/colored full logo.svg" alt="" class="icon"></a>
+      </div>
+      <div class="user-info">
+        <div class="img-container">
+          <img src="./assets/images/testimonies/avatar2.jpg" alt="" class="user-img" id="user-img-head">
+        </div>
+        <div class="nav-menu" id="nav-img-menu">
+          <ul>
+            <li><a href="profile.html">View Profile</a></li>
+            <li>
+              <form method="post">
+                <input type="submit" value="Logout">
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+    <aside>
+    <div class="menu-logo-container">
+      <button id="sidebarBtn-close"><img src="./assets/icons/icons8-close-100.png" alt="" class="icon"></button>
+      <a href="index.html"><img src="./assets/images/logo/black full logo.svg" alt="" class="icon"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="account.html">
+            <div><img src="./assets/icons/icons8-medium-icons-100.png" alt="" class="icon">Dashboard</div>
+          </a></li>
+        <li><a href="transfer.html">
+            <div><img src="./assets/icons/icons8-advance-100.png" alt="" class="icon">transfer</div>
+          </a></li>
+        <li><a href="transaction-history.html">
+            <div><img src="./assets/icons/icons8-up-down-arrow-100.png" alt="" class="icon">transaction history</div>
+          </a></li>
+        <li><a href="profile.html">
+            <div><img src="./assets/icons/icons8-user-100-2.png" alt="" class="icon">profile</div>
+          </a></li>
+        <li><a href="card.html">
+            <div><img src="./assets/icons/icons8-credit-card-66.png" alt="" class="icon">cards</div>
+          </a></li>
+      </ul>
+    </nav>
+    <form method="post">
+      <button type="submit"><img src="./assets/icons/icons8-enter-100.png" alt="" class="icon">
+        <p>Logout</p>
+      </button>
+    </form>
+  </aside>
+  <div id="dashboard-content-holder">
+  <section class="account-section">
+    <h1 class="section-title dasboard-section-title dashboard-top-space">transfer</h1>
+    <div class="cards-holder">
+      <div class="card-holder transfer-card">
+      <form method="post">
+       <input type="text" name="acc_number" placeholder="enter account number">
+       <input type="text" name="amount" placeholder="enter amount">
+       <button type="submit" id="showPop-up">Transfer Funds</button>
+      </form>
+    </div>
+    </div>
+  </section>
+  </div>
+  <div class="popUp" id="popUp">
+   <div class="pop-content">
+    <div class="close-icon">
+       <button id="close-popUp">
+        <img src="./assets/icons/icons8-close-100.png" alt="close">
+       </button>
+      </div>
+    <div class="title">
+     <h2>Are you sure you want to send</h3>
+    <h1>$2000</h1>
+    <h3>to</h4>
+    <h1>Samuel Kime</h1>
+    </div>
+    <div class="button-container">
+     <div>
+     </div>
+     <form method="post">
+      <button type="submit" class="red">No</button>
+      <button type="submit" class="green">Yes</button>
+     </form>
+    </div>
+   </div>
+  </div>
+  <footer class="account-footer">
+    <div>
+      <div class="logo-section">
+      <img src="./assets/images/logo/black full logo.svg" alt="" class="icon">
+      <p>&copy; <span>2022</span></p>
+    </div>
+    <div class="link-section">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+    </div>
+  </footer>
+  <script src="./assets/js/account.js"></script>
+  <script src="./assets/js/popup.js"></script>
+</body>
+</html>

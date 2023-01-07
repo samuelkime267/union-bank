@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="shortcut icon" href="./assets/images/logo/colored logo icon.svg" type="image/x-icon">
+</head>
+<body style="background: rgb(232, 232, 232);">
+  <header class="account-header">
+    <div class="head-container">
+      <div class="menu-logo-container">
+        <button id="sidebarBtn-show"><img src="./assets/icons/menu.png" alt="" class="icon"></button>
+        <a href="index.html"><img src="./assets/images/logo/colored full logo.svg" alt="" class="icon"></a>
+      </div>
+      <div class="user-info">
+        <div class="img-container">
+          <img src="./assets/images/testimonies/avatar2.jpg" alt="" class="user-img" id="user-img-head">
+        </div>
+        <div class="nav-menu" id="nav-img-menu">
+          <ul>
+            <li><a href="profile.html">View Profile</a></li>
+            <li>
+              <form method="post">
+                <input type="submit" value="Logout">
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <aside>
+    <div class="menu-logo-container">
+      <button id="sidebarBtn-close"><img src="./assets/icons/icons8-close-100.png" alt="" class="icon"></button>
+      <a href="index.html"><img src="./assets/images/logo/black full logo.svg" alt="" class="icon"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="account.html">
+            <div><img src="./assets/icons/icons8-medium-icons-100.png" alt="" class="icon">Dashboard</div>
+          </a></li>
+        <li><a href="transfer.html">
+            <div><img src="./assets/icons/icons8-advance-100.png" alt="" class="icon">transfer</div>
+          </a></li>
+        <li><a href="transaction-history.html">
+            <div><img src="./assets/icons/icons8-up-down-arrow-100.png" alt="" class="icon">transaction history</div>
+          </a></li>
+        <li><a href="profile.html">
+            <div><img src="./assets/icons/icons8-user-100-2.png" alt="" class="icon">profile</div>
+          </a></li>
+        <li><a href="card.html">
+            <div><img src="./assets/icons/icons8-credit-card-66.png" alt="" class="icon">cards</div>
+          </a></li>
+      </ul>
+    </nav>
+    <form method="post">
+      <button type="submit"><img src="./assets/icons/icons8-enter-100.png" alt="" class="icon">
+        <p>Logout</p>
+      </button>
+    </form>
+  </aside>
+  <div id="dashboard-content-holder">
+  <section class="account-section">
+    <h1 class="section-title dasboard-section-title dashboard-top-space">Profile</h1>
+    <div class="profile-page">
+      <div class="cards-holder">
+      <div class="card-holder">
+        <div class="profile-container">
+        <img src="./assets/images/testimonies/avatar2.jpg" alt="" class="profile-picture">
+        <h1 class="username">Samuel kime</h1>
+        <h3 class="sex male">male</h3>
+      </div>
+      <button id="showPop-up" class="edit-profile">
+        edit profile
+      </button>
+      </div>
+    </div>
+    <div class="account-details">
+      <div class="account-section">
+        <div class="section-head">
+            <h1 class="card-account-title">Account balance</h1>
+        </div>
+        <div class="balance-holder">
+          <h3>Balance</h3>
+          <h1 class="amount-green">$100.0</h1>
+          <h4>Your total balance</h4>
+        </div>
+      </div>
+      <div class="account-section">
+        <div class="section-head">
+            <h1 class="card-account-title">Login Details</h1>
+            <a href="#"><button>edit</button></a>
+        </div>
+        <div class="balance-holder">
+          <table cellspacing="0">
+            <tr>
+              <td>Username</td>
+              <td>samuelkime</td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td>.......</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="account-section">
+        <div class="section-head">
+            <h1 class="card-account-title">Account Details</h1>
+        </div>
+        <div class="balance-holder">
+          <table cellspacing="0">
+            <tr>
+              <td>Account No.</td>
+              <td>128429104867</td>
+            </tr>
+            <tr>
+              <td>Account Type</td>
+              <td>Current</td>
+            </tr>
+            <tr>
+              <td>Account Status</td>
+              <td>Active</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="account-section">
+        <div class="section-head">
+            <h1 class="card-account-title">Contact Details</h1>
+        </div>
+        <div class="balance-holder">
+          <table cellspacing="0">
+            <tr>
+              <td>Phone No.</td>
+              <td>08174622987</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>samuelkime@gmail.com</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+     <div class="popUp" id="popUp">
+   <div class="pop-content">
+    <div class="close-icon">
+      <h1 class="card-account-title">Edit profile</h1>
+       <button id="close-popUp">
+        <img src="./assets/icons/icons8-close-100.png" alt="close">
+       </button>
+      </div>
+      <div class="edit-profile-container">
+        <div class="img-container">
+          <div class="img-holder">
+            <img src="./assets/images/testimonies/avatar2.jpg" alt="" class="profile-img">
+          </div>
+          <div class="icon-holder">
+            <form method="post">
+              <div>
+                <img src="./assets/icons/icons8-google-images-100.png" alt="" class="change-profile-pic">
+              </div>
+              <input type="file" name="profile-pic" hidden>
+            </form>
+          </div>
+        </div>
+      </div>
+   </div>
+  </div>
+  </section>
+  
+  </div>
+   
+  <footer class="account-footer">
+    <div>
+      <div class="logo-section">
+      <img src="./assets/images/logo/black full logo.svg" alt="" class="icon">
+      <p>&copy; <span>2022</span></p>
+    </div>
+    <div class="link-section">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+    </div>
+  </footer>
+  <script src="./assets/js/account.js"></script>
+  <script src="./assets/js/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>registration</title>
+ <link rel="stylesheet" href="./dist/css/main.css">
+ <link rel="shortcut icon" href="./assets/images/logo/colored logo icon.svg" type="image/x-icon">
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+   <nav>
+    <div class="logo-container" style="width: 100%;">
+     <a href="index.html"><img src="./assets/images/logo/colored full logo.svg" alt="" class="logo"></a>
+     <div style="display:flex;">
+     <a class="login-show" href="login.html"><button class="cta">Login</button></a>
+     </div>
+    </div>
+   </nav>
+  </header>
+<section class="login-container">
+ <form class="login-form" action="account.html">
+  <div class="input-info-container">
+  
+   <div>
+        
+  <label for="firstname">Firstname</label>
+  <input type="text" name="firstname" placeholder="Enter firstname">
+
+  <label for="firstname">Lastname</label>
+  <input type="text" name="lastname" placeholder="Enter lastname">
+
+  <div>
+    <div>
+      <label for="dob">Date of birth</label>
+  <input type="date" name="dob">
+    </div>
+  <div>
+    <label for="gender">Gender</label>
+    <select name="gender">
+   <option value="male">Male</option>
+   <option value="female">Female</option>
+  </select>
+  </div>
+  </div>
+  
+  <label for="picture">Picture</label>
+  <input type="file" name="picture">
+   </div>
+  
+   <div>
+    <label for="firstname">Phone number</label>
+    <input type="tel" name="phone-number" placeholder="Enter phone number">
+
+      <label for="firstname">Email</label>
+  <input type="email" name="email" placeholder="Enter Email">
+
+    <label for="firstname">Address</label>
+  <input type="text" name="address" placeholder="Enter resident address">
+
+    <label for="firstname">password</label>
+  <input type="password" name="password" placeholder="Enter password">
+
+   </div>
+  </div>
+  <button type="submit" name="reg-form-submit">Submit</button>
+ </form>
+</section>
+
+</body>
+</html>

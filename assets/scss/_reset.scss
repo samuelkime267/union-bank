@@ -1,0 +1,125 @@
+@import './variables';
+@font-face {
+ font-family: poppins;
+ src: url(../Poppins/Poppins-Regular.ttf);
+ font-weight: 400;
+}
+@font-face {
+ font-family: poppins;
+ src: url(../Poppins/Poppins-Bold.ttf);
+ font-weight: 700;
+}
+@font-face {
+ font-family: poppins;
+ src: url(../Poppins/Poppins-Medium.ttf);
+ font-weight: 500;
+}
+*{
+ text-decoration: none;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: poppins;
+ transition: 0.3s ease;
+ scroll-behavior: smooth;
+ list-style-type: none;
+}
+button{
+ padding: 10px 24px;
+ cursor: pointer;
+ border-radius: 100rem;
+}
+section{
+ max-width: 1300px;
+ width: 100%;
+ padding: 5%;
+ min-height: 100vh;
+ margin-bottom: 2rem;
+ margin: auto;
+}
+.cta{
+ border: 2px solid $primaryColor;
+ color: white;
+ background: $primaryColor;
+ font-size: 1.5rem;
+ font-weight: fontWeight(medium);
+ text-transform: capitalize;
+ &:hover{
+  color: $primaryColor;
+  background: transparent;
+ }
+}
+.section-title{
+ font-size: 1.5rem;
+ text-align: center;
+ text-transform: capitalize;
+}
+.amount-red{
+ color: crimson;
+}
+.amount-green{
+ color: rgb(0, 210, 0);
+}
+.sidebar-show{
+ transform: translateX(0) !important;
+  opacity: 1 !important;
+  display: flex;
+}
+.status{
+ color: $primaryColor;
+ border: 1px solid $primaryColor;
+ padding: 10px 24px;
+ border-radius: 20rem;
+ font-size: .8rem;
+ width: fit-content;
+ &:hover{
+  color: white;
+  background: $primaryColor;
+ }
+}
+.show-popUp-container{
+  transform: scale(1) !important;
+  opacity: 1 !important;
+  display: flex !important;
+  transition: 4s ease !important;
+}
+.fit-content{
+ height: 7rem !important;
+}
+.card-account-title{
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: left;
+  font-weight: fontWeight(medium);
+  align-self: left;
+}
+.icon{
+ height: 3rem;
+}
+.dashboard-top-space{
+ margin-top: 5rem;
+}
+.male{
+  color: blue;
+}
+.female{
+  color: rgb(255, 116, 139);
+}
+// box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+@media (min-width:1024px) {
+ section{
+ padding: 0 2.5rem;
+ margin: auto;
+ margin-top: 5rem;
+}
+.section-title{
+ font-size: 3rem;
+ text-align: center;
+ text-transform: capitalize;
+}
+}
+@media screen and (max-width:767px) {
+ .none{
+  display: none;
+ }
+}

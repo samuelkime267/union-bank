@@ -1,0 +1,3 @@
+#00009e lighter
+#000084 darket
+#0000ff blue

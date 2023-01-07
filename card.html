@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="shortcut icon" href="./assets/images/logo/colored logo icon.svg" type="image/x-icon">
+</head>
+
+<body style="background: rgb(232, 232, 232);">
+  <header class="account-header">
+    <div class="head-container">
+      <div class="menu-logo-container">
+        <button id="sidebarBtn-show"><img src="./assets/icons/menu.png" alt="" class="icon"></button>
+        <a href="index.html"><img src="./assets/images/logo/colored full logo.svg" alt="" class="icon"></a>
+      </div>
+      <div class="user-info">
+        <div class="img-container">
+          <img src="./assets/images/testimonies/avatar2.jpg" alt="" class="user-img" id="user-img-head">
+        </div>
+        <div class="nav-menu" id="nav-img-menu">
+          <ul>
+            <li><a href="profile.html">View Profile</a></li>
+            <li>
+              <form method="post">
+                <input type="submit" value="Logout">
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <aside>
+    <div class="menu-logo-container">
+      <button id="sidebarBtn-close"><img src="./assets/icons/icons8-close-100.png" alt="" class="icon"></button>
+      <a href="index.html"><img src="./assets/images/logo/black full logo.svg" alt="" class="icon"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="account.html">
+            <div><img src="./assets/icons/icons8-medium-icons-100.png" alt="" class="icon">Dashboard</div>
+          </a></li>
+        <li><a href="transfer.html">
+            <div><img src="./assets/icons/icons8-advance-100.png" alt="" class="icon">transfer</div>
+          </a></li>
+        <li><a href="transaction-history.html">
+            <div><img src="./assets/icons/icons8-up-down-arrow-100.png" alt="" class="icon">transaction history</div>
+          </a></li>
+        <li><a href="profile.html">
+            <div><img src="./assets/icons/icons8-user-100-2.png" alt="" class="icon">profile</div>
+          </a></li>
+        <li><a href="card.html">
+            <div><img src="./assets/icons/icons8-credit-card-66.png" alt="" class="icon">cards</div>
+          </a></li>
+      </ul>
+    </nav>
+    <form method="post">
+      <button type="submit"><img src="./assets/icons/icons8-enter-100.png" alt="" class="icon">
+        <p>Logout</p>
+      </button>
+    </form>
+  </aside>
+  <div id="dashboard-content-holder">
+    <section class="account-section">
+      <h1 class="section-title dasboard-section-title dashboard-top-space">Card</h1>
+      <div class="cards-holder">
+        <!-- <div class="card-holder transfer-card atm-card-request">
+          <h1>Apply for debit card</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nam praesentium voluptatem eligendi id, aut doloremque nihil quibusdam dicta, cupiditate culpa molestias rem nisi. Dolorum veniam ipsum nesciunt aut ullam repudiandae modi? Minima aliquam recusandae commodi consequuntur eligendi possimus dicta amet error aspernatur voluptatum sint optio pariatur eaque, officiis ut.</p>
+          <form method="post">
+            <button type="submit" name="request-card-btn" class="request-card-btn">Request</button>
+          </form>
+        </div> -->
+        <!-- <div class="card-holder transfer-card atm-card-request">
+          <h1 class="amount-green">Your application have been sent successfully!</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut nam praesentium voluptatem eligendi id, aut doloremque nihil quibusdam dicta, cupiditate culpa molestias rem nisi. Dolorum veniam ipsum nesciunt aut ullam repudiandae modi? Minima aliquam recusandae commodi consequuntur eligendi possimus dicta amet error aspernatur voluptatum sint optio pariatur eaque, officiis ut.</p>
+        </div> -->
+      <div class="atm-card-holder">
+        <div class="container-holder atm-card-container">
+          <h1>Your card</h1>
+          <div class="the-card-container">
+            <div class="actual-card">
+              <div class="bank-name"><img src="./assets/images/logo/black logo text.svg" alt=""></div>
+              <h1 class="card-number">1275 9028 4857 8294</h1>
+              <div class="card-end">
+                <h3 class="name">Samuel kime</h3>
+                <h3 class="expiry-date">Exp 8/25</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-holder account-section-holder">
+        <div class="section-head">
+            <h1>Contact Details</h1>
+        </div>
+        <div class="balance-holder">
+          <table cellspacing="0">
+            <tr>
+              <td>Account No.</td>
+              <td>128429104867</td>
+            </tr>
+            <tr>
+              <td>Card No.</td>
+              <td>1234762548927465</td>
+            </tr>
+            <tr>
+              <td>Name</td>
+              <td>Samuel Kime</td>
+            </tr>
+            <tr>
+              <td>CVV</td>
+              <td>345</td>
+            </tr>
+            <tr>
+              <td>Issued Date</td>
+              <td>03/06/2022</td>
+            </tr>
+            <tr>
+              <td>Expiry Date</td>
+              <td>03/06/2024</td>
+            </tr>
+            <tr>
+              <td>Card Status</td>
+              <td>Active</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+  </div>
+  <footer class="account-footer">
+    <div>
+      <div class="logo-section">
+        <img src="./assets/images/logo/black full logo.svg" alt="" class="icon">
+        <p>&copy; <span>2022</span></p>
+      </div>
+      <div class="link-section">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/account.js"></script>
+  <script src="./assets/js/popup.js"></script>
+</body>
+
+</html>

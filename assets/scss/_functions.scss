@@ -1,0 +1,9 @@
+@mixin displayFlex($justify, $flexDirection){
+display: flex;
+align-items: center;
+justify-content: $justify;
+flex-direction: $flexDirection;
+};
+@function fontWeight($weight){
+@return map-get($fontWeight, $weight )
+};

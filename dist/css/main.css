@@ -1,0 +1,2364 @@
+@font-face {
+  font-family: poppins;
+  src: url(../Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../Poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../Poppins/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: poppins;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  scroll-behavior: smooth;
+  list-style-type: none;
+}
+
+button {
+  padding: 10px 24px;
+  cursor: pointer;
+  border-radius: 100rem;
+}
+
+section {
+  max-width: 1300px;
+  width: 100%;
+  padding: 5%;
+  min-height: 100vh;
+  margin-bottom: 2rem;
+  margin: auto;
+}
+
+.cta {
+  border: 2px solid #00009e;
+  color: white;
+  background: #00009e;
+  font-size: 1.5rem;
+  font-weight: fontWeight(medium);
+  text-transform: capitalize;
+}
+
+.cta:hover {
+  color: #00009e;
+  background: transparent;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.amount-red {
+  color: crimson;
+}
+
+.amount-green {
+  color: #00d200;
+}
+
+.sidebar-show {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+  opacity: 1 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.status {
+  color: #00009e;
+  border: 1px solid #00009e;
+  padding: 10px 24px;
+  border-radius: 20rem;
+  font-size: .8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.status:hover {
+  color: white;
+  background: #00009e;
+}
+
+.show-popUp-container {
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+  opacity: 1 !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-transition: 4s ease !important;
+  transition: 4s ease !important;
+}
+
+.fit-content {
+  height: 7rem !important;
+}
+
+.card-account-title {
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: left;
+  font-weight: fontWeight(medium);
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+}
+
+.icon {
+  height: 3rem;
+}
+
+.dashboard-top-space {
+  margin-top: 5rem;
+}
+
+.male {
+  color: blue;
+}
+
+.female {
+  color: #ff748b;
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 0 2.5rem;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  .section-title {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .none {
+    display: none;
+  }
+}
+
+header {
+  z-index: 10000;
+  background: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  min-height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+header nav .logo-container a .logo {
+  height: 2.5rem;
+}
+
+header nav .logo-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+header nav .logo-container div button {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+header nav .logo-container div button .nav-menu-btn {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+}
+
+header nav .logo-container div a .cta {
+  border: 2px solid #00009e;
+  color: white;
+  background: #00009e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: .5rem 1rem;
+}
+
+header nav .logo-container div a .cta:hover {
+  color: #00009e;
+  background: transparent;
+}
+
+header nav .logo-container.login div a .cta {
+  display: inline !important;
+}
+
+header nav ul {
+  height: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+header nav ul.active {
+  height: 100vh;
+}
+
+header nav ul li {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+header nav ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header nav ul li:hover a {
+  background: rgba(0, 0, 255, 0.123);
+}
+
+header nav ul li a {
+  color: #00009e;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  border-radius: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+header nav ul .nav-link-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+header nav ul .nav-link-btn button {
+  font-weight: 500;
+  background: #000084;
+  border: 2px solid #000084;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+header nav ul .nav-link-btn button:hover {
+  background: transparent;
+  color: #000084;
+}
+
+.hero {
+  max-width: 100%;
+  padding: 0;
+}
+
+.hero .hero-container {
+  padding: 5%;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hero .hero-container .hero-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero .hero-container .hero-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero .hero-container .hero-text-container .hero-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #000084;
+}
+
+.hero .hero-container .hero-text-container .hero-p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 60%;
+}
+
+.service .service-container {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service .service-container .service-holder {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.15);
+  max-width: 22rem;
+}
+
+.service .service-container .service-holder:hover .service-img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.service .service-container .service-holder .service-img {
+  width: 100%;
+  height: 13rem;
+  overflow: hidden;
+}
+
+.service .service-container .service-holder .service-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service .service-container .service-holder .service-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 .7rem;
+  padding-bottom: 1rem;
+}
+
+.service .service-container .service-holder .service-text-container .service-title {
+  margin: 1rem 0;
+  text-transform: capitalize;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.service .service-container .service-holder .service-text-container .service-p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.service .partners .partners-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  opacity: .1;
+}
+
+.service .partners .partners-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.service .partners .partners-container .partner-img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  max-width: 5rem;
+  width: 100%;
+}
+
+.testimony .testimony-section-container {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimony .testimony-section-container .testimony-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 15rem;
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+  border-radius: 5px;
+  min-height: 25rem;
+}
+
+.testimony .testimony-section-container .testimony-container:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.testimony .testimony-section-container .testimony-container .profile .testimony-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.testimony .testimony-section-container .testimony-container .profile .client-name {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.testimony .testimony-section-container .testimony-container .testimony-p {
+  margin-bottom: 1rem;
+}
+
+.final-cta {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00009e), to(#000084));
+  background: linear-gradient(#00009e, #000084);
+  max-width: 100%;
+  min-width: 100%;
+  min-height: auto;
+}
+
+.final-cta .final-cta-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.final-cta .final-cta-container .section-title {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.final-cta .final-cta-container .cta {
+  border: 2px solid white;
+}
+
+.final-cta .final-cta-container .cta:hover {
+  color: #00009e;
+  background: white;
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: #000084;
+}
+
+footer .footer {
+  min-height: 20rem;
+  margin-bottom: 0;
+}
+
+.login-container {
+  margin: auto;
+  padding: 5 2.5rem;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.login-container .login-form .input-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+
+.login-container .login-form .input-info-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  max-width: 25rem;
+  width: 100%;
+}
+
+.login-container .login-form .input-info-container div label {
+  text-transform: capitalize;
+  font-size: .9rem;
+}
+
+.login-container .login-form .input-info-container div input {
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  padding: .5rem;
+}
+
+.login-container .login-form .input-info-container div select {
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+}
+
+.login-container .login-form .input-info-container div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 2rem;
+}
+
+.login-container .login-form .input-info-container div div div {
+  gap: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.login-container button {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  background: #00009e;
+  color: white;
+  border: 2px solid #00009e;
+  font-size: 1.2rem;
+}
+
+.login-container button:hover {
+  background: transparent;
+  color: #00009e;
+}
+
+header.account-header {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 10000000000000000;
+}
+
+header.account-header .head-container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+header.account-header .head-container .menu-logo-container button {
+  border: none;
+  margin-right: 2rem;
+  padding: 0;
+  background: transparent;
+}
+
+header.account-header .head-container .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header.account-header .head-container .user-info .img-container {
+  cursor: pointer;
+}
+
+header.account-header .head-container .user-info .img-container .user-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header.account-header .head-container .user-info .nav-menu {
+  height: 0;
+  overflow: hidden;
+}
+
+header.account-header .head-container .user-info .nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header.account-header .head-container .user-info .nav-menu ul li {
+  margin-top: 1rem;
+}
+
+header.account-header .head-container .user-info .nav-menu ul li a {
+  background: #00009e;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 2px solid #00009e;
+}
+
+header.account-header .head-container .user-info .nav-menu ul li form input {
+  background: crimson;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 2px solid crimson;
+}
+
+aside {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+  display: none;
+  width: 20rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000000000000;
+  background: #000084;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+aside .menu-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+}
+
+aside .menu-logo-container button {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+aside .menu-logo-container button img {
+  width: 2rem;
+  height: 2rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+aside .menu-logo-container a img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+aside nav {
+  margin-top: 2rem;
+}
+
+aside nav ul li {
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+aside nav ul li:hover {
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+aside nav ul li a div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+aside nav ul li a div img {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem !important;
+  height: auto;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+aside form {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+aside form button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+aside form button img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 2rem;
+  height: 2rem !important;
+  margin-right: 1rem;
+}
+
+aside form button p {
+  font-size: 1rem;
+  color: white;
+}
+
+aside form:hover {
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dasboard-section-title {
+  text-align: left;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.account-section {
+  margin-top: 0rem;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.account-section .cards-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+}
+
+.account-section .cards-holder .card-holder {
+  border-radius: 5px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.account-section .cards-holder .card-holder h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.account-section .cards-holder .card-holder h1 {
+  font-size: 2rem;
+}
+
+.account-section .cards-holder .card-holder h4 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.account-section .cards-holder .transfer-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account-section .cards-holder .transfer-card form {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 25rem;
+  gap: 2rem;
+}
+
+.account-section .cards-holder .transfer-card form input, .account-section .cards-holder .transfer-card form button {
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.account-section .cards-holder .transfer-card form input {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.3);
+  border: none;
+}
+
+.account-section .cards-holder .transfer-card form button {
+  border: 2px solid #00009e;
+  background: #00009e;
+  color: white;
+}
+
+.account-section .cards-holder .transfer-card form button:hover {
+  color: #00009e;
+  background: transparent;
+}
+
+.account-section .cards-holder .atm-card-request {
+  padding: 5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account-section .cards-holder .atm-card-request h1 {
+  text-transform: capitalize;
+}
+
+.account-section .cards-holder .atm-card-request p {
+  width: 60pc;
+}
+
+.account-section .cards-holder .atm-card-request form {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.account-section .cards-holder .atm-card-request form button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 3rem;
+}
+
+.account-section .cards-holder .atm-card-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+
+.account-section .cards-holder .atm-card-holder .container-holder {
+  border-radius: 5px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.account-section .cards-holder .atm-card-holder .atm-card-container h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.account-section .cards-holder .atm-card-holder .atm-card-container .the-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.account-section .cards-holder .atm-card-holder .atm-card-container .the-card-container .actual-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  background: #000084;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.account-section .cards-holder .atm-card-holder .atm-card-container .the-card-container .actual-card .bank-name img {
+  height: 2rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.account-section .cards-holder .atm-card-holder .atm-card-container .the-card-container .actual-card .card-number {
+  font-size: 1.8rem;
+}
+
+.account-section .cards-holder .atm-card-holder .atm-card-container .the-card-container .actual-card .card-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.account-section .cards-holder .atm-card-holder .atm-card-container .the-card-container .actual-card .card-end h3 {
+  font-size: .7rem;
+  font-weight: 400;
+}
+
+.account-section .cards-holder .atm-card-holder .account-section-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.account-section .cards-holder .atm-card-holder .account-section-holder .section-head {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.account-section .cards-holder .atm-card-holder .account-section-holder .section-head h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.account-section .cards-holder .atm-card-holder .account-section-holder .balance-holder {
+  width: 100%;
+}
+
+.account-section .cards-holder .atm-card-holder .account-section-holder .balance-holder table {
+  width: 100%;
+}
+
+.account-section .cards-holder .atm-card-holder .account-section-holder .balance-holder table tr td {
+  padding: .5rem;
+}
+
+.account-section .statistics-containers-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.account-section .statistics-containers-holder .stat-card {
+  border-radius: 5px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 30rem;
+}
+
+.account-section .transaction-holder {
+  width: 100%;
+}
+
+.account-section .transaction-holder .transaction-container {
+  width: 100%;
+  border-radius: 5px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.account-section .transaction-holder .transaction-container .section-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.account-section .transaction-holder .transaction-container .section-head h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.account-section .transaction-holder .transaction-container .section-head a button {
+  border-radius: 5px;
+  background: #00009e;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid #00009e;
+}
+
+.account-section .transaction-holder .transaction-container .section-head a button:hover {
+  background: transparent;
+  color: #00009e;
+}
+
+.account-section .transaction-holder .transaction-container table {
+  width: 100%;
+}
+
+.account-section .transaction-holder .transaction-container table tr th {
+  background: rgba(90, 90, 90, 0.287);
+  padding: 1rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.account-section .transaction-holder .transaction-container table tr td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.account-section .profile-page {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25rem auto;
+      grid-template-columns: 25rem auto;
+  width: 100%;
+  gap: 2rem;
+}
+
+.account-section .profile-page .cards-holder .card-holder {
+  padding: 5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account-section .profile-page .cards-holder .card-holder .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account-section .profile-page .cards-holder .card-holder .profile-container img {
+  width: 10rem;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.2);
+  padding: 3px;
+}
+
+.account-section .profile-page .cards-holder .card-holder .profile-container .username {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+
+.account-section .profile-page .cards-holder .card-holder .profile-container .sex {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.account-section .profile-page .cards-holder .card-holder .edit-profile {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: 2px solid #00009e;
+  border-radius: 5px;
+  background: #00009e;
+  color: white;
+  text-transform: capitalize;
+}
+
+.account-section .profile-page .cards-holder .card-holder .edit-profile:hover {
+  background: transparent;
+  color: #00009e;
+}
+
+.account-section .profile-page .account-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 2rem;
+}
+
+.account-section .profile-page .account-details .account-section {
+  border-radius: 5px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.account-section .profile-page .account-details .account-section .section-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.account-section .profile-page .account-details .account-section .section-head a button {
+  border-radius: 5px;
+  color: white;
+  background: #00009e;
+  border: 2px solid #00009e;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.account-section .profile-page .account-details .account-section .section-head a button:hover {
+  color: #00009e;
+  background: transparent;
+}
+
+.account-section .profile-page .account-details .account-section .balance-holder {
+  width: 100%;
+}
+
+.account-section .profile-page .account-details .account-section .balance-holder h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.account-section .profile-page .account-details .account-section .balance-holder h1 {
+  font-size: 2rem;
+}
+
+.account-section .profile-page .account-details .account-section .balance-holder h4 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.account-section .profile-page .account-details .account-section .balance-holder table {
+  width: 100%;
+}
+
+.account-section .profile-page .account-details .account-section .balance-holder table tr td {
+  width: 100%;
+  padding: 10px;
+}
+
+.account-footer div {
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
+.account-footer div .logo-section {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+
+.account-footer div .logo-section img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-right: 1rem;
+}
+
+.account-footer div .logo-section p {
+  color: white;
+}
+
+.account-footer div .link-section {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+
+.account-footer div .link-section a {
+  margin-left: 1rem;
+  color: white;
+}
+
+.popUp {
+  z-index: 100000000000000000000000000000000000000000000000000000;
+  opacity: 0;
+  -webkit-transform: scale(5);
+          transform: scale(5);
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
+}
+
+.popUp .pop-content {
+  border-radius: 5px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.popUp .pop-content .close-icon {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.popUp .pop-content .close-icon button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+.popUp .pop-content .close-icon button img {
+  width: 1.5rem;
+}
+
+.popUp .pop-content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: .5rem;
+}
+
+.popUp .pop-content .button-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+
+.popUp .pop-content .button-container form button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 7rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.popUp .pop-content .button-container form .red {
+  background: crimson;
+  border: 2px solid crimson;
+}
+
+.popUp .pop-content .button-container form .red:hover {
+  color: crimson;
+  background: transparent;
+}
+
+.popUp .pop-content .button-container form .green {
+  background: #00d200;
+  border: 2px solid #00d200;
+}
+
+.popUp .pop-content .button-container form .green:hover {
+  color: #00d200;
+  background: transparent;
+}
+
+.popUp .pop-content .edit-profile-container {
+  padding: 3rem;
+}
+
+.popUp .pop-content .edit-profile-container .img-container {
+  position: relative;
+}
+
+.popUp .pop-content .edit-profile-container .img-container .img-holder .profile-img {
+  width: 10rem;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.2);
+  padding: 3px;
+}
+
+.popUp .pop-content .edit-profile-container .img-container .icon-holder {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5rem;
+  height: 5rem;
+}
+
+.popUp .pop-content .edit-profile-container .img-container .icon-holder form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.popUp .pop-content .edit-profile-container .img-container .icon-holder form div {
+  background-color: #00009e;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.popUp .pop-content .edit-profile-container .img-container .icon-holder form div .change-profile-pic {
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+@media (min-width: 1024px) {
+  header {
+    min-height: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav {
+    width: 90%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header nav .logo-container {
+    width: auto;
+  }
+  header nav .logo-container a .logo {
+    height: 3rem;
+  }
+  header nav .logo-container div {
+    display: none;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: auto;
+    overflow: unset;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    flex-direction: row;
+  }
+  header nav ul li {
+    margin: 0;
+    margin-left: 20px;
+    text-align: center;
+  }
+  header nav ul li a {
+    font-size: 1.2rem;
+  }
+  header nav ul .nav-link-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header nav ul .nav-link-btn button {
+    font-size: 1rem;
+  }
+  .hero {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+  }
+  .hero .hero-container {
+    max-width: 1300px;
+    margin: auto;
+    position: unset;
+  }
+  .hero .hero-container .hero-text-container {
+    width: 70%;
+  }
+  .hero .hero-container .hero-text-container .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 3.2rem;
+  }
+  .hero .hero-container .hero-text-container .hero-p {
+    font-size: 1.1rem;
+    width: 60%;
+  }
+  .service {
+    margin-top: 2rem;
+  }
+  .service .service-container {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service .service-container .service-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 5px;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    max-width: 100%;
+    margin-bottom: 5rem;
+  }
+  .service .service-container .service-holder .service-img {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+  }
+  .service .service-container .service-holder .service-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .service .service-container .service-holder .service-text-container {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0 1rem;
+  }
+  .service .service-container .service-holder .service-text-container .service-title {
+    margin: 1rem 0;
+    text-align: left;
+    font-size: 3rem;
+  }
+  .service .service-container .service-holder .service-text-container .service-p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 30pc;
+  }
+  .service .service-container .service-holder.service-inverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .testimony .testimony-section-container {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .testimony .testimony-section-container .testimony-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem;
+  }
+  .final-cta {
+    padding: 3rem 0;
+  }
+  footer {
+    margin-top: 5rem;
+    background-color: #000084;
+  }
+  footer .footer {
+    min-height: 20rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .account-section {
+    margin-top: 0rem;
+    padding: 0 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .account-section .cards-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  .account-section .cards-holder .card-holder {
+    border-radius: 5px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+            box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  .account-section .cards-holder .card-holder h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .account-section .cards-holder .card-holder h1 {
+    font-size: 2rem;
+  }
+  .account-section .cards-holder .card-holder h4 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .account-section .statistics-containers-holder {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+  .account-section .statistics-containers-holder .stat-card {
+    border-radius: 5px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+            box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 30rem;
+  }
+  .account-section .transaction-holder {
+    width: 100%;
+  }
+  .account-section .transaction-holder .transaction-container {
+    width: 100%;
+    border-radius: 5px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+            box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.123);
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5rem;
+  }
+  .account-section .transaction-holder .transaction-container .section-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .account-section .transaction-holder .transaction-container .section-head h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  .account-section .transaction-holder .transaction-container .section-head a button {
+    border-radius: 5px;
+    background: #00009e;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid #00009e;
+  }
+  .account-section .transaction-holder .transaction-container .section-head a button:hover {
+    background: transparent;
+    color: #00009e;
+  }
+  .account-section .transaction-holder .transaction-container table {
+    width: 100%;
+  }
+  .account-section .transaction-holder .transaction-container table tr th {
+    background: rgba(90, 90, 90, 0.287);
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .account-section .transaction-holder .transaction-container table tr td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+/*# sourceMappingURL=main.css.map */
